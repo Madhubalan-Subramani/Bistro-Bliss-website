@@ -1,0 +1,108 @@
+.ReviewContent {
+  padding: 0 7%;
+}
+
+.Review_title {
+  font-size: 48px;
+  font-weight: 500;
+  font-family: "Frank Ruhl Libre", serif;
+  margin-top: 5%;
+  text-align: center;
+  line-height: 7vh;
+}
+
+.Cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Review_card {
+  display: flex;
+  padding: 3%;
+  flex-direction: column;
+  margin: 5% 1% 3% 1%;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  height: 48vh;
+  width: 42vh;
+  border-radius: 10px;
+}
+
+.card_title {
+  font-size: 22px;
+  font-weight: 600;
+  color: brown;
+}
+
+.card_description {
+  font-size: 16px;
+}
+
+.card_divider {
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+}
+
+.card_footer {
+  display: flex;
+}
+
+.card_profile {
+  width: 65px;
+  height: 65px;
+}
+
+.card_profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card_profileDetail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  justify-content: center;
+}
+
+.card_profileName {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card_profileLocation {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) { 
+  .Review_title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ReviewContent {
+    padding: 6% 7%;
+  }
+
+  .Review_title {
+    font-size: 26px;
+  }
+
+  .Cards {
+    margin-top: 6%;
+    gap: 15px;
+  }
+
+  .Review_card {
+    margin: 0;
+    padding: 8%;
+  }
+
+  .card_title {
+    font-size: 20px;
+  }
+}

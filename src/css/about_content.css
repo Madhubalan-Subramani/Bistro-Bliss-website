@@ -1,0 +1,114 @@
+.AboutContent {
+  background-color: #f7f7f5;
+  padding: 3% 8%;
+  display: flex;
+  gap: 10%;
+}
+
+.About_left {
+  width: 50%;
+  height: 78vh;
+}
+
+.About_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.About_right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.About_topic {
+  font-size: 48px;
+  font-weight: 500;
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+.About_subTopic {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.About_description {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.About_button {
+  margin-top: 25px;
+  border-radius: 30px;
+  background-color: transparent;
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid grey;
+  width: max-content;
+  cursor: pointer;
+}
+
+.About_button:hover {
+  background-color: red;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .About_topic {
+    font-size: 42px;
+  }
+
+  .About_subTopic {
+    font-size: 16px;
+  }
+
+  .About_description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) { 
+  .AboutContent {
+    flex-direction: column;
+    padding: 10% 8%;
+  }
+
+  .About_left {
+    width: 100%;
+    height: 45vh;
+  }
+
+  .About_right {
+    width: 100%;
+  }
+
+  .About_topic {
+    font-size: 36px;
+    margin-top: 3%;
+  }
+}
+
+@media (max-width: 480px) {
+  .AboutContent {
+    padding: 10% 8%;
+  }
+
+  .About_topic {
+    font-size: 26px;
+    margin-top: 15px;
+  }
+
+  .About_subTopic {
+    margin-top: 15px;
+  }
+
+  .About_description {
+    margin-top: 15px;
+  }
+}

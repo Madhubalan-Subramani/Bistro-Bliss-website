@@ -1,0 +1,89 @@
+.menuContent {
+  margin: 50px 7% 5% 7%;
+}
+
+.menuTopic {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 48px;
+  text-align: center;
+  line-height: 10vh;
+  margin-bottom: 2%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menuCard {
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 42vh;
+  width: 30vh;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid #e6e6e6;
+  margin: 20px 1%;
+  cursor: pointer;
+}
+
+.menuCard:hover {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu_logo {
+  background-color: #f2f3f0;
+  height: 85px;
+  width: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.menu_topic {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.menu_description {
+  font-size: 16px;
+  text-align: center;
+}
+
+.Explorebutton {
+  color: red;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  .menuTopic {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menuContent {
+    margin: 0px 7% 5% 7%;
+  }
+
+  .menuTopic {
+    font-size: 26px;
+  }
+
+  .menuCard {
+    margin: 0;
+    justify-content: space-evenly;
+    height: 50vh;
+    width: auto;
+  }
+
+  .cards {
+    gap: 10px;
+  }
+}

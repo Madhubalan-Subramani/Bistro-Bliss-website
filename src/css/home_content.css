@@ -1,0 +1,67 @@
+.HomeScreen {
+  background-image: url("../assets/bg_image_1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_topic {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 70px;
+  text-align: center;
+  line-height: 10vh;
+}
+
+.home_subTopic {
+  font-size: 20px;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.home_groupButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.home_groupButton .button1 {
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+  background-color: red;
+  border: 1px solid grey;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.home_groupButton .button2 {
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+  border: 2px solid grey;
+  background-color: transparent;
+  cursor: pointer;
+}
+ 
+
+@media (max-width: 768px) {
+  .home_topic {
+    font-size: 50px;
+    line-height: 8vh;
+  }
+
+  .home_subTopic {
+    font-size: 16px;
+    padding: 0 14%;
+  }
+
+  .HomeScreen {
+    gap: 3%;
+  }
+}

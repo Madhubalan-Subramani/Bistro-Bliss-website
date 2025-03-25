@@ -1,0 +1,128 @@
+.DetailsContent {
+  background-color: #f7f7f5;
+  padding: 4% 8%;
+  display: flex;
+  gap: 10%;
+}
+
+.Detail_left {
+  width: 60%;
+  height: 78vh;
+  display: flex;
+  gap: 15px;
+}
+
+.Detail_image_1st_layout {
+  width: 50%;
+}
+
+.Detail_image_2st_layout {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 15px;
+}
+
+.Detail_left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Detail_right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Detail_topic {
+  font-size: 48px;
+  font-weight: 500;
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+.Detail_description {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.Detail_subTopic {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.Detail_subContent {
+  display: flex;
+  margin-top: 10px;
+}
+
+.Detail_subIcon {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  align-content: center;
+}
+
+.Detail_subDescription {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 3%;
+  align-content: center;
+}
+
+@media (max-width: 1000px) {
+  .DetailsContent {
+    flex-direction: column;
+    padding: 6% 8%;
+  }
+
+  .Detail_left {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .Detail_right {
+    width: 100%;
+  }
+
+  .Detail_topic {
+    font-size: 36px;
+    margin-top: 5%;
+  }
+
+  .Detail_subIcon {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .Detail_subDescription {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .DetailsContent {
+    padding: 10% 8%;
+  }
+
+  .Detail_topic {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+
+  .Detail_description {
+    margin-top: 15px;
+  }
+
+  .Detail_subTopic {
+    margin-top: 15px;
+  }
+}
